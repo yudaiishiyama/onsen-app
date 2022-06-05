@@ -10,6 +10,19 @@
   </head>
 
   <body>
+    <header>
+        <div class="heading">
+          <h1 class="title">湯めぐる</h1>
+        </div>
+        <div class="navbar">
+          <ul class='nav-lists'>
+            <li><%= link_to 'マイページ', "#", class: "user-nickname" %></li> 
+            <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" %></li> 
+            <li><%= link_to 'ログイン', "#", class: "login" %></li>
+            <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+          </ul>
+        </div>
+    </header>
     <%= yield %>
   </body>
 </html>
