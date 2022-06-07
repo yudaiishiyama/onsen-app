@@ -1,0 +1,45 @@
+
+.form__wrapper{
+  width: 100%;
+  min-width: 800px;
+  height: 820px;
+  background-color: transparent;
+  background-image:url(assets/tairu.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat; 
+  margin:auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__text {
+  width: 90%;
+  margin-top: 5px;
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid white;
+  background: white;
+  font-size: 16px;
+  resize: none;
+}
+
+.field{
+
+  padding-bottom: 10px;
+}
+
+.actions{
+  margin-bottom: 40px;
+}
+
+.form__btn{
+  width: 50%;
+  margin: 0 auto;
+  margin-left: 50px;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+}
