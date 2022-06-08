@@ -4,3 +4,31 @@
     <p>九州の温泉をめぐる</p>
   </div>
 </div>
+
+
+<div class='item-contents'>
+    <h2 class='title'>ピックアップカテゴリー</h2>
+    <div class="subtitle" >
+      新規投稿商品
+    </div>
+    <ul class='post-lists'>
+      <% @post.each do |post| %>
+      <li class='list'>
+        <%= link_to posts_path(post) do %>
+        <div class='post-img-content'>
+          <%= image_tag post.image.variant(resize: '500x500'), class: "post-img" if post.image.attached?%>
+        </div>
+        <div class='post-info'>
+          <h4 class='post-name'>
+            <%= post.address %>
+          </h4>
+        </div>
+        <% end %>
+      </li>
+      <% end %>
+      
+      
+    </ul>
+  </div>
+
+</div>

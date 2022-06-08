@@ -3,8 +3,7 @@
       <h2 class="page-heading"></h2>
       <%= form_with(model: @post, local: true) do |f| %>
         <div class="field">
-        
-          <%= f.text_field :address, class: :form__text, placeholder:"行った温泉名", id:"post_address" %>
+          <%= f.text_area :address, class: :form__text, placeholder:"行った温泉名", id:"post_address" %>
         </div>
 
         <div class="field">

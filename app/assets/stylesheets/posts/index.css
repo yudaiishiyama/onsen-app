@@ -5,10 +5,12 @@ body {
 }
 
 h1 {
+  width: 100px;
+  padding: 10px 20px;
   color: white;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h2,h3,h4,h5,h6,p {
   padding: 10px 5px;
   margin: 5px;
 }
@@ -42,7 +44,7 @@ header {
 }
 
 .navbar {
-  width: 75%;
+  width: 100%;
 }
 
 .nav-lists {
@@ -71,4 +73,8 @@ li {
   size: 90px;
   left: 700px;
   top: 500px;
+}
+
+.post-name{
+  color: black;
 }
