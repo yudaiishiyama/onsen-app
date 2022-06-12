@@ -6,7 +6,7 @@
 
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3CtZVPiw9yExwXpuVbIeD7GW6aywZaWM&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key= <%=ENV['GOOGLE_MAP_KEY']%>&callback=initMap&v=weekly"
       async
     ></script>
     <script>

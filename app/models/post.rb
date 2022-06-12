@@ -14,10 +14,10 @@ class Post < ApplicationRecord
 
     private
     def geocode
-      #logger.debug("geocode")
-      uri = URI.escape("https://maps.googleapis.com/maps/api/geocode/json?address="+self.address.gsub(" ", "")+"&key=AIzaSyC3CtZVPiw9yExwXpuVbIeD7GW6aywZaWM")
+      logger.debug("geocode")
+      uri = URI.escape("https://maps.googleapis.com/maps/api/geocode/json?address="+self.address.gsub(" ", "")+"&key=ENV['GOOGLE_MAP_KEY']")
       #logger.debug("#{uri}")
-      # res = HTTP.get(uri)
+       #res = HTTP.get(uri)
       res = Net::HTTP.get_response(URI(uri))
       response = JSON.parse(res.body)
       #logger.debug("#{res.body}")
