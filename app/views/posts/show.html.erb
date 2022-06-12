@@ -1,0 +1,69 @@
+
+<main class="main">
+<div class= "null">
+</div>
+<div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3CtZVPiw9yExwXpuVbIeD7GW6aywZaWM&callback=initMap&v=weekly"
+      async
+    ></script>
+    <script>
+    let map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: <%= @post.latitude %>, lng: <%= @post.longitude %>},
+    zoom: 15,
+  });
+  var marker = new google.maps.Marker({
+      position: { lat: <%= @post.latitude %>, lng: <%= @post.longitude %>},
+      map: map,
+      title: "<%= @post.address %>"
+    });
+}
+    </script>
+
+  <div class="inner">
+    <div class="post__wrapper">
+      <div class="post_show_image">
+        <%= image_tag @post.image.variant(resize: '500x500'), class: "post_show_image" %>
+      </div>
+      
+
+      <div class="post__body">
+        <div class="post_address">
+          <%= @post.address %>
+        </div>
+        <div class="post_spring_quality">
+          <p class="detail__message">
+            泉質:
+            <%= @post.spring_quality %>
+          </p>
+        </div>
+        <div class="post_description">
+          <p class="detail_description">
+            <%= @post.description %>
+          </p>
+        </div>
+        <div class="post_bottom">
+          <div class="post_name">
+          投稿者:
+          <%= link_to @post.user.name, "#", class: :post__user %>
+          </div>
+          <div class="post_comment">
+          "コメント"
+          </div>
+          <p class="no-comment">コメントはまだありません。</p>
+        </div>
+      </div>
+      <% if user_signed_in? && current_user.id == @post.user_id %>
+         <div class="post__manage"> 
+           <%= link_to "編集する", "#", class: :post__btn %> 
+           <%= link_to "削除する", "#" , class: :post__btn %> 
+         </div> 
+       <% end %> 
+    </div>
+  </div>
+</main>

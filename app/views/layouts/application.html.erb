@@ -12,7 +12,9 @@
   <body>
     <header>
         <div class="heading">
-          <h1 class="title">湯めぐる</h1>
+          <h1>
+          <%= link_to '湯巡り', root_path %>
+          </h1>
         </div>
           <% if user_signed_in? %>
           <div class="navbar">
@@ -21,6 +23,7 @@
               <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" %></li> 
               <li><%= link_to '新規投稿', new_post_path, class: "new-post" %></li>
               <li><%= link_to '投稿一覧', posts_path, class: "post-all" %></li>
+              <li><%= link_to '🔔', "#", class: "post-all" %></li>
           <% else %>
               <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
               <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>

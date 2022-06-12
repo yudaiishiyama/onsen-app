@@ -7,12 +7,7 @@ body {
 h1 {
   width: 120px;
   padding: 10px 5px;
-  color: white;
-}
-
-h2,h3,h4,h5,h6,p {
-  padding: 10px 5px;
-  margin: 5px;
+  color: black;
 }
 
 ul,li {
@@ -24,7 +19,7 @@ ul,li {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 header {
@@ -78,6 +73,32 @@ li {
 
 /* 投稿一覧 */
 
+@keyframes post-contents {
+  0% {
+    filter: blur(5px);
+    transform: rotateY(0deg);
+    transform: scale(1, 1);
+    opacity: 0
+  }
+  11% { opacity: 0.1 }
+  33% {
+    transform: rotateY(5deg);
+    transform: scale(1, 1);
+    opacity: 3
+  }
+  66% {
+    transform: rotateY(6deg);
+    transform: scaleY(1, 1);
+    opacity: 4
+  }
+  100% {
+    bottom: 0;
+    filter: blur(5px);
+    transform: rotateY(6deg);
+    transform: scaleY(1, 1);
+  }
+}
+
 .post-contents {
   background-color: #FFF;
   display: flex;
@@ -85,6 +106,10 @@ li {
   align-items: center;
   padding: 5vh 0;
   width: 100vw;
+  height: 100%;
+  background-image:url(assets/mizu.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat; 
 }
 
 .post-lists {
@@ -107,6 +132,7 @@ li {
   transform: scale(1.1, 1.1);
   transition:1s all;
 }
-.post-name{
+.post-address{
   color: black;
+  text-align: center;
 }
