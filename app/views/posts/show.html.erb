@@ -3,10 +3,8 @@
 <div class= "null">
 </div>
 <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key= <%=ENV['GOOGLE_MAP_KEY']%>&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=<%=ENV['GOOGLE_MAP_KEY']%>&callback=initMap&v=weekly"
       async
     ></script>
     <script>
@@ -60,8 +58,8 @@ function initMap() {
       </div>
       <% if user_signed_in? && current_user.id == @post.user_id %>
          <div class="post__manage"> 
-           <%= link_to "編集する", "#", class: :post__btn %> 
-           <%= link_to "削除する", "#" , class: :post__btn %> 
+           <%= link_to "編集する", edit_post_path(@post.id), method: :get,class: :post__btn %> 
+           <%= link_to "削除する", post_path(@post.id), method: :delete,class: :post__btn %> 
          </div> 
        <% end %> 
     </div>

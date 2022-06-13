@@ -1,0 +1,26 @@
+
+    <div class="form__wrapper">
+      <h2 class="page-heading"></h2>
+      <%= form_with(model: @post, local: true) do |f| %>
+        <div class="field">
+          <%= f.text_area :address, class: :form__text, placeholder:"行った温泉名", id:"post_address" %>
+        </div>
+
+        <div class="field">
+          <%= f.text_area :spring_quality, class: :form__text, placeholder:"泉質",id:"post_spring_quality" %>
+        </div>
+
+        <div class="field">
+          <%= f.text_area :description, class: :form__text, placeholder:"テキスト", id:"post_description" %>
+        </div>
+
+        <div class="field">
+          <%= f.label :image, "画像" %><br />
+          <%= f.file_field :image, id:"post_image" %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "変更する", class: :form__btn  %>
+        </div>
+      <% end %>
+    </div>
