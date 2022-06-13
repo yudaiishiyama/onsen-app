@@ -3,16 +3,15 @@
 <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'registration-main', local: true do |f| %>
 
 <div class='form-wrap'>
-  <div class='form-header'>
-    <h1 class='form-header-text'>
-      新規登録♨︎
-    </h1>
+  <div class="null">
   </div>
 
   <%= render "devise/shared/error_messages", resource: resource %>
 
 
   <div class="form-group">
+  <div class="null">
+  </div>
     <div class='form-text-wrap'>
       <label class="form-text">ニックネーム</label>
       <span class="indispensable">必須</span>
@@ -25,6 +24,13 @@
       <span class="indispensable">必須</span>
     </div>
     <%= f.email_field :email, class:"input-default", id:"email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
+  </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">プロフィール</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.text_area :profile, class:"input-default", id:"email", placeholder:"自己紹介になるもの", autofocus: true %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
@@ -41,9 +47,15 @@
     </div>
     <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"同じパスワードを入力して下さい" %>
   </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">プロフィール画像</label>
+      <span class="indispensable">必須</span>
+    </div>
+    <%= f.file_field :image, class:"user-image", id:"image",  autofocus: true %>
+  </div>
   <div class='register-btn'>
     <%= f.submit "新規登録" ,class:"register-red-btn" %>
   </div>
 </div>
 <% end %>
-

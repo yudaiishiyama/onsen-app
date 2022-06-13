@@ -6,6 +6,9 @@ class User < ApplicationRecord
   validates :name, presence: true
   VALID_PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
   validates :password, format: { with: VALID_PASSWORD_REGEX }, presence: true
+  validates :image, presence: true
+  validates :profile, presence: true
 
   has_many :posts
+  has_one_attached :image,dependent: :destroy
 end

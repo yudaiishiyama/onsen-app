@@ -4,9 +4,9 @@
 .registration-main {
   width: 100%;
   min-width: 800px;
-  height: 820px;
+  height: 100%;
   background-color: rgba(0,0,0,0.);
-  background-image:url(assets/onsenm.jpg);
+  background-image:url(assets/mizu.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
   margin:auto; 
