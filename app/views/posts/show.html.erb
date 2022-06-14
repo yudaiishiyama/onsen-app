@@ -59,20 +59,20 @@ function initMap() {
             <div class="input">
               <%= f.text_field :content, id:"comment_content" %>
             </div>
-            <div class="actions">
+            <div class="actions-comment">
               <%= f.submit "送信する", class: :comment__btn  %>
             </div>
           <% end %>
         <% end %>
-        <ul class="comments_lists">
+        <div class="comments_lists">
           <% @comments.each do |comment| %>
-            <li class="comments_list">
-              <%= link_to "#{comment.user.name}", user_path(comment.user), class: :comment_user %>
-              <p>コメント:<%= comment.content%></p>
-              <%= link_to "削除", post_comment_path(comment.post.id, comment.id), method: :delete %>
-            </li>
+            <div class="comments_list">
+              <%= link_to "#{comment.user.name}:", user_path(comment.user), class: :comment_user %>
+              <%= comment.content%>
+            </div>
+            <%= link_to "削除", post_comment_path(comment.post.id, comment.id), method: :delete,class: :comment_delete %>
           <% end %>
-        </ul>
+        </div>
   
       <% if user_signed_in? && current_user.id == @post.user_id %>
          <div class="post__manage"> 
