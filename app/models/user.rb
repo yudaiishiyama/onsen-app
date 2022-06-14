@@ -10,5 +10,5 @@ class User < ApplicationRecord
   validates :profile, presence: true
 
   has_many :posts
-  has_one_attached :image,dependent: :destroy
+  has_one_attached :image, dependent: :destroy
 end

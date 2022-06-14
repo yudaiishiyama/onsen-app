@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @post = Post.all.order("created_at DESC")
+    @post = Post.all.order('created_at DESC')
   end
 
   def new
@@ -8,7 +8,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post=Post.new(post_params)
+    @post = Post.new(post_params)
     if @post.save
       redirect_to posts_path
     else
@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
-    if @post.user.id == current_user.id 
+    if @post.user.id == current_user.id
     else
       redirect_to posts_path
     end
@@ -45,10 +45,12 @@ class PostsController < ApplicationController
     else
       redirect_to root_path
     end
-  end 
+  end
 
   private
+
   def post_params
-    params.require(:post).permit(:address, :spring_quality, :description, :image, :latitude, :longitude).merge(user_id: current_user.id)
+    params.require(:post).permit(:address, :spring_quality, :description, :image, :latitude,
+                                 :longitude).merge(user_id: current_user.id)
   end
 end
