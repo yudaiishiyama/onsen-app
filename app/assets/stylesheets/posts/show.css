@@ -80,3 +80,48 @@
   color: #fff;
   background: skyblue;
 }
+
+/* ユーザーページ */
+.user-contents {
+  width: 100vw;
+  height: 100vh;
+  background-image:url(assets/mark.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat; 
+}
+.user-image {
+  display: flex;
+  justify-content: center;
+}
+.user_top_image {
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  width:  180px;       /* ※縦横を同値に */
+  height: 180px;
+  border: 6px solid wheat;
+}
+
+.detail-table {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.user__manage {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  background-color: rgb(204, 234, 246);
+  text-decoration: none;
+  user-select: none;
+  border: 1px white solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 4px;
+}
+
+.user__manage:hover {
+  color: #fff;
+  background: skyblue;
+}
+.user__btn {
+  color: white;
+}

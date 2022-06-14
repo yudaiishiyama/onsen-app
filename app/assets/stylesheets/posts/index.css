@@ -13,7 +13,7 @@ h1 {
 ul,li {
   text-decoration: none;
   font-size: 20px;
-  padding: 28px 5px;
+  padding: 12px 5px;
   margin: 5px;
 }
 
@@ -107,9 +107,8 @@ li {
   padding: 5vh 0;
   width: 100vw;
   height: 100vh;
-  background-image:url(assets/mizu.jpg);
+  background-image:url(assets/mark.jpg);
   background-size:100% 100%;
-  
   background-repeat: no-repeat; 
 }
 

@@ -2,9 +2,9 @@
 <%= form_with model: @user, url: user_session_path, id: 'new_user',class: 'registration-main', local: true do |f| %>
 <div class='form-wrap'>
   <div class='form-header'>
-    <h1 class='form-header-text'>
+    <h2 class='form-header-text'>
       ログイン♨︎
-    </h1>
+    </h2>
   </div>
   <div class='login-flash-message'>
     <%= flash[:notice] %>
