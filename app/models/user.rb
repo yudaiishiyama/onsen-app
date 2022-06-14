@@ -10,5 +10,6 @@ class User < ApplicationRecord
   validates :profile, presence: true
 
   has_many :posts
+  has_many :comments,dependent: :destroy
   has_one_attached :image, dependent: :destroy
 end

@@ -32,9 +32,9 @@
 ## commentsテーブル
 | Column             | Type      | Options                       |
 | ------------------ | ----------| ------------------------------|
-| comments           | text      | null: false                   |
+| content            | text      | null: false                   |
 | user               | references| null: false,foreign_key: true | 
-| post               | string    | null: false,foreign_key: true |
+| post               | references| null: false,foreign_key: true |
 
 ### Association
 - belongs_to :user
