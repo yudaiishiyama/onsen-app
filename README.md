@@ -11,6 +11,7 @@
 ### Association
 - has_many :comments
 - has_many :posts
+- has_many :likes
 
 
 ## postsテーブル
@@ -45,7 +46,7 @@
 | Column             | Type      | Options                       |
 | ------------------ | --------- | ----------------------------- |
 | user               | references| null: false,foreign_key: true | 
-| post               | string    | null: false,foreign_key: true |
+| post               | references| null: false,foreign_key: true |
 
 ### Association
 - belongs_to :user

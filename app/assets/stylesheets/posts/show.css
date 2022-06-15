@@ -3,7 +3,7 @@
 }
 
 .main {
-  background-image:url(assets/mizu.jpg);
+  background-image:url(assets/mark.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
   height: 250vh;
@@ -130,4 +130,16 @@
 .comment_delete {
   display: flex;
  justify-content: flex-end;
+}
+
+.like-hearts {
+  display:flex;
+  justify-content: flex-end;
+}
+
+i {
+    color: red;
+    display: inline-block;  
+    border-radius: 100px;
+    font-weight: bold;
 }

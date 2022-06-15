@@ -28,11 +28,12 @@ function initMap() {
       <div class="post_show_image">
         <%= image_tag @post.image.variant(resize: '500x500'), class: "post_show_image" %>
       </div>
-      
-
       <div class="post__body">
         <div class="post_address">
           <%= @post.address %>
+          <div class="like-heart">
+            <%= render partial: "likes/like", locals: { like: @like } %>
+          </div>
         </div>
         <div class="post_spring_quality">
           <p class="detail__message">
