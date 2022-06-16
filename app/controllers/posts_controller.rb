@@ -1,4 +1,7 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+
   def index
     @post = Post.all.order('created_at DESC')
   end
@@ -43,9 +46,9 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     if @post.user.id == current_user.id
       @post.destroy
-      redirect_to root_path
+      redirect_to posts_path
     else
-      redirect_to root_path
+      redirect_to posts_path
     end
   end
 
@@ -54,5 +57,9 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:address, :spring_quality, :description, :image, :latitude,
                                  :longitude).merge(user_id: current_user.id)
+  end
+
+  def contributor_confirmation
+    redirect_to posts_path unless current_user == @post.user
   end
 end
