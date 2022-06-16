@@ -8,12 +8,11 @@ class Post < ApplicationRecord
 
   belongs_to :user
   has_many :likes, dependent: :destroy
-  has_many :comments,dependent: :destroy
+  has_many :comments, dependent: :destroy
   has_one_attached :image, dependent: :destroy
 
   after_validation :geocode
 
-  
   private
 
   def geocode
@@ -29,5 +28,4 @@ class Post < ApplicationRecord
     self.latitude = response['results'][0]['geometry']['location']['lat']
     self.longitude = response['results'][0]['geometry']['location']['lng']
   end
-
 end
