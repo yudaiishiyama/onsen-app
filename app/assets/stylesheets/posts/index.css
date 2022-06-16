@@ -2,6 +2,7 @@ body {
   font-size: 14px;
   color: black;
   margin: 0 auto;
+  font-family: '筑紫A丸ゴシック';
 }
 
 h1 {
@@ -58,17 +59,18 @@ li {
   color: #FFF;
 }
 
-.top-image {
+.contents {
   height: 100%;
-  width: 100vw;
+  width: 200vh;
 }
 
-.first-view p {
+p {
   position: absolute;
-  color:#FFF;
-  size: 90px;
-  left: 700px;
-  top: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  font-size: 27px;
+  font-family:'Comic Sans MS' 
 }
 
 /* 投稿一覧 */
