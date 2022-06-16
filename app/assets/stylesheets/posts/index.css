@@ -73,33 +73,9 @@ p {
   font-family:'Comic Sans MS' 
 }
 
-/* 投稿一覧 */
 
-@keyframes post-contents {
-  0% {
-    filter: blur(5px);
-    transform: rotateY(0deg);
-    transform: scale(1, 1);
-    opacity: 0
-  }
-  11% { opacity: 0.1 }
-  33% {
-    transform: rotateY(5deg);
-    transform: scale(1, 1);
-    opacity: 3
-  }
-  66% {
-    transform: rotateY(6deg);
-    transform: scaleY(1, 1);
-    opacity: 4
-  }
-  100% {
-    bottom: 0;
-    filter: blur(5px);
-    transform: rotateY(6deg);
-    transform: scaleY(1, 1);
-  }
-}
+
+/* 投稿一覧 */
 
 .post-contents {
   background-color: #FFF;
@@ -109,7 +85,7 @@ p {
   padding: 5vh 0;
   width: 100vw;
   height: 100vh;
-  background-image:url(assets/mark.jpg);
+  background-image:url(assets/mizu.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
 }

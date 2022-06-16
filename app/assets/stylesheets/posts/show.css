@@ -3,7 +3,7 @@
 }
 
 .main {
-  background-image:url(assets/mark.jpg);
+  background-image:url(assets/mizu.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
   height: 250vh;
@@ -86,7 +86,7 @@
 .user-contents {
   width: 100vw;
   height: 100vh;
-  background-image:url(assets/mark.jpg);
+  background-image:url(assets/mizu.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
 }
@@ -98,7 +98,7 @@
   border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
   width:  180px;       /* ※縦横を同値に */
   height: 180px;
-  border: 6px solid wheat;
+  border: 6px solid whitesmoke;
 }
 
 .detail-table {
