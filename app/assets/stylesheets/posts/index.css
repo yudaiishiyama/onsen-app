@@ -72,7 +72,11 @@ li {
   width: 100vw;
 }
 
-.first-view {}
+.top-image {
+  width: 100vw;
+  height: 100vh;
+}
+
 p {
   position: absolute;
   top: 50%;
@@ -216,12 +220,19 @@ li {
 }
 
 @media (max-width: 390px) {
+.top-image {
+  width: 100vw;
+  height: 100%;
+}
+}
+
+@media (max-width: 390px) {
 p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  font-size: 25px;
+  font-size: 15px;
   font-family:'Comic Sans MS' 
 }
 }
