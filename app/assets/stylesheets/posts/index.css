@@ -130,11 +130,13 @@ p {
 }
 
 /* スマホ表示設定 */
+@media (max-width: 390px) {
 body {
   font-size: 14px;
   color: black;
   margin: 0 auto;
   font-family: '筑紫A丸ゴシック';
+}
 }
 
 @media (max-width: 390px) {
