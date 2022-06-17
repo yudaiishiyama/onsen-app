@@ -8,14 +8,14 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
     <header>
         <div class="heading">
-          <h1>
-          <%= link_to '湯巡り', root_path %>
-          </h1>
+          <%= link_to 'Yumegurism', root_path, class: "meguri" %>
         </div>
           <% if user_signed_in? %>
           <div class="navbar">
