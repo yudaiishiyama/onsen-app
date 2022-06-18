@@ -132,7 +132,7 @@ p {
 /* スマホ表示設定 */
 @media (max-width: 390px) {
 body {
-  font-size: 14px;
+  font-size: 12px;
   color: black;
   margin: 0 auto;
   font-family: '筑紫A丸ゴシック';
@@ -202,7 +202,7 @@ display: flex;
 
 @media (max-width: 390px) {
 li {
-  font-size: 15px;
+  font-size: 14px;
   margin-left: 10px;
   margin-right: 10px;
   list-style: none;
