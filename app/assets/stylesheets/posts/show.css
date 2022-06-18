@@ -3,10 +3,13 @@
 }
 
 .main {
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 100vh;
   background-image:url(assets/mizu.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
-  height: 250vh;
+  height: 1500px;
 }
 #map {
   border-radius: 3px;
@@ -14,7 +17,7 @@
   margin-left:auto;
   margin-right:auto;
   text-align:left;
-  width: 65%
+  width: 90%
 }
 
 .post_show_image {
@@ -82,6 +85,96 @@
   background: skyblue;
 }
 
+/* スマホ適用詳細 */
+@media (max-width: 390px) {
+.null {
+  height: 90px;
+}
+
+.main {
+  margin: 0 auto;
+  height: 1;
+  background-image:url(assets/mizu.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat; 
+  height: 1300px;
+}
+#map {
+  border-radius: 3px;
+  height: 250px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  width: 90%
+}
+
+.post_show_image {
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
+  width: 400px;
+  height: 400px;
+}
+
+.post__body {
+  border-radius: 3px;
+  padding: 10px 20px 20px;
+  height: 450px;
+  width: 75vw;
+  background: white;
+  color: black;
+  margin: 50px auto 0;
+}
+
+.post_address {
+  text-align: center;
+  font-size: 20px;
+}
+
+.post_description {
+  margin-bottom: 150px;
+}
+
+.post_bottom {
+}
+.post_name {
+  color: black;
+  display: flex;
+ justify-content: flex-end;
+}
+
+.post_comment {
+  margin-top: 30px;
+}
+
+.post__manage {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.post__btn {
+  display: block;
+  padding: 0.4em 1.6em;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  user-select: none;
+  border: 1px white solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin: 0 4px;
+}
+
+.post__btn:hover {
+  color: #fff;
+  background: skyblue;
+}
+}
+
+
 /* ユーザーページ */
 .user-contents {
   width: 100vw;
@@ -96,9 +189,9 @@
 }
 .user_top_image {
   border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
-  width:  180px;       /* ※縦横を同値に */
-  height: 180px;
-  border: 6px solid whitesmoke;
+  width:  200px;       /* ※縦横を同値に */
+  height: 200px;
+  border: 6px solid rgb(155, 212, 235,0.5);
 }
 
 .detail-table {
@@ -142,4 +235,14 @@ i {
     display: inline-block;  
     border-radius: 100px;
     font-weight: bold;
+}
+
+
+@media (max-width: 390px) {
+.user_top_image {
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  width:  120px;       /* ※縦横を同値に */
+  height: 120px;
+  border: 6px solid rgb(155, 212, 235,0.5);
+}
 }

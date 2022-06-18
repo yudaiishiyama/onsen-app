@@ -1,8 +1,8 @@
 
 .form__wrapper{
-  width: 100%;
-  min-width: 800px;
-  height: 820px;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 100vh;
   background-color: transparent;
   background-image:url(assets/mizu.jpg);
   background-size:100% 100%;
@@ -43,3 +43,4 @@
 .form__btn:hover {
   cursor: pointer;
 }
+

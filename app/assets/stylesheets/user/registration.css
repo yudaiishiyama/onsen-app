@@ -104,8 +104,6 @@
 /* スマホサイズ */
 @media (max-width: 390px) {
 .registration-main {
-  max-width: 100vw;
-  min-width: 800px;
   height: 100vh;
   background-color: rgba(0,0,0,0);
   background-image:url(assets/mizu.jpg);

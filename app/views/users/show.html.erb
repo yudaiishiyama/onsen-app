@@ -15,18 +15,19 @@
         </tr>
       </tbody>
     </table>
-
+    <% if user_signed_in? && current_user.id == @user.id %> 
     <div class="user__manage"> 
     <%= link_to "編集する", edit_user_registration_path, method: :get,class: :user__btn %> 
     </div> 
+    <% end %>
   </div>
-    <ul class='post-lists'>
+    <div class='post-lists'>
       <% @user.posts.each do |post| %>
-      <li class='list'>
+      <div class='list'>
         <div class='post-img-content'>
           <%= link_to image_tag(post.image.variant(resize: '400x200'), class: "post-img"), post_path(post.id) if post.image.attached? %>
         </div>
-      </li>
+      </div>
       <% end %>
-    </ul>
+    </div>
 </div>

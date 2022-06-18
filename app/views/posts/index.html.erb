@@ -4,9 +4,9 @@
     <div class="subtitle" >
 
     </div>
-    <ul class='post-lists'>
+    <div class='post-lists'>
       <% @post.each do |post| %>
-      <li class='list'>
+      <div class='list'>
         <%= link_to posts_path(post) do %>
         <div class='post-img-content'>
           <%= link_to image_tag(post.image.variant(resize: '400x200'), class: "post-img"), post_path(post.id) if post.image.attached? %>
@@ -14,11 +14,11 @@
         <div class='post-info'>
         </div>
         <% end %>
-      </li>
+      </div>
       <% end %>
       
       
-    </ul>
+    </div>
   </div>
 
 </div>
