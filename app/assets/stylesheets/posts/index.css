@@ -238,32 +238,10 @@ p {
    display: none; 
 }
 
-.header__nav {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  transform: translateX(100%); 
-  background-color: #fff; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
-  transition: ease .4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
-}
-/* ハンバーガーメニュー */
-.header__hamburger {
-  width: 48px;
-  height: 100%;
-}
-
-.hamburger {
-  background-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
-  border-color: transparent; /*buttonタグデフォルトスタイルを打ち消し*/
-  z-index: 9999;
-}
 /* ハンバーガーメニュー実装 */
 @media screen and (max-width: 390px) {
 .navbar {
-  /* display: none; */
+   display: none;
 }
 
 #hamburger {
@@ -315,9 +293,9 @@ p {
   height: 100vh;
   display: block;
   width: 100%;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(173,216,230,0.2);
   transition: all .2s ease-in-out;
-  opacity: 0;
+  opacity: 0.5;
   transform: translateY(-100%);
 }
 
