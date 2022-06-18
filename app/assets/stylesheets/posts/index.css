@@ -293,7 +293,7 @@ p {
   height: 100vh;
   display: block;
   width: 100%;
-  background: rgba(173,216,230,0.2);
+  background: rgba(173,216,230,0.5);
   transition: all .2s ease-in-out;
   opacity: 0.5;
   transform: translateY(-100%);
