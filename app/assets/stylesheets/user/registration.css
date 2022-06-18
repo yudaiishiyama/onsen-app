@@ -31,7 +31,7 @@
 
 .form-header-text {
   text-align: center;
-  line-height: 100px;
+  line-height: 90px;
   font-size: 20px;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .form-group:first-child {
@@ -92,7 +92,7 @@
 }
 
 .register-red-btn {
-  width: 95%;
+  width: 92%;
   background: transparent;
   border: 1px solid black;
   color: black;
