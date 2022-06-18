@@ -10,6 +10,17 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Londrina+Shadow" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+   <script>
+   $(function() {
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-nav')
+      hum.on('click', function(){
+         nav.toggleClass('toggle');
+      });
+   });
+   </script>
   </head>
 
   <body>
@@ -31,7 +42,14 @@
             </ul>
           </div>
           <% end %>
-        </div>
+
+          <nav class="header__nav nav">
+          </nav>
+
+          <button class="header__hamburger hamburger">
+          </button>
+
+           </div>
     </header>
     <%= yield %>
   </body>
