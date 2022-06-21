@@ -54,11 +54,11 @@ class PostsController < ApplicationController
                                  :longitude).merge(user_id: current_user.id)
   end
 
-   def contributor_confirmation
-     if @post.user.id == current_user.id
-       redirect_to posts_path
-     else
-       redirect_to posts_path
-     end
-   end
+  def contributor_confirmation
+    if @post.user.id == current_user.id
+      redirect_to posts_path
+    else
+      redirect_to posts_path
+    end
+  end
 end
