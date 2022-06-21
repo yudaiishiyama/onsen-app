@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+  # before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
     @post = Post.all.order('created_at DESC')
@@ -21,10 +21,6 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
-    if @post.user.id == current_user.id
-    else
-      redirect_to posts_path
-    end
   end
 
   def update
@@ -44,8 +40,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
-    if @post.user.id == current_user.id
-      @post.destroy
+    if @post.destroy
       redirect_to posts_path
     else
       redirect_to posts_path
@@ -59,7 +54,11 @@ class PostsController < ApplicationController
                                  :longitude).merge(user_id: current_user.id)
   end
 
-  def contributor_confirmation
-    redirect_to posts_path unless current_user == @post.user
-  end
+   def contributor_confirmation
+     if @post.user.id == current_user.id
+       redirect_to posts_path
+     else
+       redirect_to posts_path
+     end
+   end
 end
