@@ -1,12 +1,12 @@
 <div class="like-hearts">
 <%if user_signed_in? %>
     <% if Like.find_by(user_id: current_user.id, post_id: @post.id) %>
-        <%= link_to  post_like_path(@post,@post.likes), {class: "like-link", method: :delete } do %>
+        <%= link_to  post_like_path(@post,@post.likes), class: "like-link", method: :delete, remote: true do %>
           <i class="fas fa-heart unlike-btn"></i>
         <% end %>
         <div class="count"><%= @post.likes.count %></div>
     <% else %>
-        <%= link_to post_likes_path(@post,@post.likes), {class: "like-link", method: :post } do %>
+        <%= link_to post_likes_path(@post,@post.likes), class: "like-link", method: :post, remote: true do %>
           <i class="far fa-heart like-btn"></i>
         <% end %>
         <div class="count"><%= @post.likes.count %></div>

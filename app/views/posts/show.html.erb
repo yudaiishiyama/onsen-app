@@ -31,8 +31,8 @@ function initMap() {
       <div class="post__body">
         <div class="post_address">
           <%= @post.address %>
-          <div class="like-heart">
-            <%= render partial: "likes/like", locals: { like: @like } %>
+          <div id="like_heart_<%= @post.id %>">
+            <%= render partial: "likes/like", locals: {  post: @post, likes: @likes } %>
           </div>
         </div>
         <div class="post_spring_quality">
