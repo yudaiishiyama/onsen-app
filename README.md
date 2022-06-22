@@ -66,8 +66,8 @@ https://docs.google.com/spreadsheets/d/1KTwhx_go50To3R03khBooQKtLbZgtMFeOiozgHOb
 
 # 画面遷移図
 [![Image from Gyazo](https://i.gyazo.com/42e82288ceace7cf631582c5d19eede8.png)](https://gyazo.com/42e82288ceace7cf631582c5d19eede8)
-# テーブル設計
 
+# テーブル設計
 ## usersテーブル
 | Column             | Type   | Options                 |
 | ------------------ | ------ | -----------             |
