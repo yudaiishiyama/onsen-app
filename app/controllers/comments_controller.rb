@@ -1,8 +1,10 @@
 class CommentsController < ApplicationController
   def create
+    @post = Post.find(params[:post_id])
     @comment = Comment.new(comment_params)
+    @comment.post_id = @post.id
     if @comment.save
-      redirect_to post_path(@comment.post)
+      render :post_comments
     else
       @post = @comment.post
       @comments = @prototype.comments
@@ -13,7 +15,8 @@ class CommentsController < ApplicationController
   def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
-    redirect_to post_path(@comment.post)
+    @post = Post.find(params[:post_id]) 
+    render :post_comments 
   end
 
   private
