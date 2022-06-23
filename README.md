@@ -16,9 +16,11 @@ https://onsen-app-38009.herokuapp.com/posts
 # 利用方法
 ## 温泉情報投稿
 1.トップページのヘッダーからユーザー新規登録を行う
+
 2.新規投稿ボタンから、写真・場所名・テキスト・泉質を入力し投稿する。
 ## ユーザー同士のアクション
 1.一覧ページから画像をクリックすると詳細画面に入る。
+
 2.詳細画面に入るといいねを押せたり、コメントを入力することができる。
 
 # アプリケーションを作成した背景
@@ -127,10 +129,15 @@ Ruby,Ruby on Rails,jquery,HTML,CSS,ajax
 
 # ローカルでの動作方法
 % git clone https://github.com/yudaiishiyama/onsen-app.git
+
 % cd onsen_app
+
 % bundle install
+
 % rails db:create
+
 % rails db:migrate
+
 % yarn install
 
 # 工夫したポイント
