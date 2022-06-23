@@ -33,9 +33,9 @@ https://onsen-app-38009.herokuapp.com/posts
 https://docs.google.com/spreadsheets/d/1KTwhx_go50To3R03khBooQKtLbZgtMFeOiozgHObdqA/edit#gid=982722306
 
 # 実装した機能についての画像やGIFおよびその説明
-## トップページ
+<!-- ## トップページ
 ヘッダーにログイン・新規登録ボタン左上にアプリ名を表示。
-[![Image from Gyazo](https://i.gyazo.com/04b767420a8720be6ee5316e27069177.jpg)](https://gyazo.com/04b767420a8720be6ee5316e27069177)
+[![Image from Gyazo](https://i.gyazo.com/04b767420a8720be6ee5316e27069177.jpg)](https://gyazo.com/04b767420a8720be6ee5316e27069177) -->
 
 ## ユーザー登録
 必要な情報を入力する。
