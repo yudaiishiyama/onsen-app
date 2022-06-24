@@ -6,7 +6,7 @@
   max-width: 1500px;
   margin: 0 auto;
   height: 100vh;
-  background-image:url(assets/mizu.jpg);
+  background-image:url(assets/mix.001.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
   height: 1500px;
@@ -94,7 +94,7 @@
 .main {
   margin: 0 auto;
   height: 1;
-  background-image:url(assets/mizu.jpg);
+  background-image:url(assets/mix.001.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
   height: 1300px;
@@ -178,8 +178,8 @@
 /* ユーザーページ */
 .user-contents {
   width: 100vw;
-  height: 100vh;
-  background-image:url(assets/mizu.jpg);
+  height: 1500px;
+  background-image:url(assets/mix.001.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
 }
