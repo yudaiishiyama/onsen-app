@@ -10,6 +10,7 @@ https://onsen-app-38009.herokuapp.com/posts
 # テスト用アカウント
 ・basic認証パスワード：admin
 ・basic認証ID：3993
+・ニックネーム：test
 ・メールアドレス：Yuki@gmail.com
 ・パスワード：Yuki1231
 
