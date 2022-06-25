@@ -78,13 +78,33 @@ li {
   height: 100vh;
 }
 
-p {
+h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   font-size: 30px;
   font-family: 'klee'
+}
+
+.second_title{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 8%;
+}
+
+.second_colum{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8%;
+}
+
+/* 対象者の部分 */
+.target{
+  text-align: center;
+  width: 20rem;
+  margin: 3%;
 }
 
 
