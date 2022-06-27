@@ -49,7 +49,7 @@ https://docs.google.com/spreadsheets/d/1KTwhx_go50To3R03khBooQKtLbZgtMFeOiozgHOb
 
 ## 詳細ページ
 ユーザーが投稿した内容が確認できるこのページで編集・削除・コメント・いいねが可能。
-[![Image from Gyazo](https://i.gyazo.com/5f36557f43dac92e446da40fb946fb49.gif)](https://gyazo.com/5f36557f43dac92e446da40fb946fb49)
+[![Image from Gyazo](https://i.gyazo.com/29e39fb6b45dc49b69ddab229a33ec87.jpg)](https://gyazo.com/29e39fb6b45dc49b69ddab229a33ec87)
 
 ## 編集・削除機能
 投稿した本人であれば編集削除が可能。
