@@ -87,11 +87,11 @@ h2 {
   font-family: 'klee'
 }
 
+
 .second_title{
   text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 8%;
 }
 
 .second_colum{
@@ -123,6 +123,16 @@ h2 {
   margin: 3%;
 }
 
+.logo-footer {
+  text-align: center;
+  align-content: center;
+  background-color: skyblue;
+  height: 60px;
+}
+
+.footer-image {
+  width: 90px;
+}
 /* 投稿一覧 */
 
 .post-contents {
