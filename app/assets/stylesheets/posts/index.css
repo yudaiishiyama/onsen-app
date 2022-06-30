@@ -234,17 +234,13 @@ body {
   margin: 0 auto;
   font-family: '筑紫A丸ゴシック';
 }
-}
 
-@media (max-width: 390px) {
 ul,li {
   text-decoration: none;
   padding: 12px 5px;
   margin: 5px;
 }
-}
 
-@media (max-width: 390px) {
 header {
   position:fixed;
   height: 50px;
@@ -255,16 +251,12 @@ header {
   padding: 5px 0;
 display: flex;
 }
-}
 
-@media (max-width: 390px) {
 .heading {
   margin-left: 5px;
   padding: 10px;
 }
-}
 
-@media (max-width: 390px) {
 .appname {
   display: inline-block;
   width: 87px;
@@ -276,52 +268,38 @@ display: flex;
   padding: 12px 0px;
   font-family: 'Londrina Shadow', cursive;
 }
-}
 
 
-@media (max-width: 390px) {
 .navbar {
   width: 100vw;
 }
-}
 
-@media (max-width: 390px) {
 .nav-lists {
   width: 100vw;
   display: flex;
 }
-}
 
-@media (max-width: 390px) {
 li {
   font-size: 11px;
   margin-left: 7px;
   margin-right: 10px;
   list-style: none;
 }
-}
 
-@media (max-width: 390px) {
 .link {
   color: #FFF;
 }
-}
 
-@media (max-width: 390px) {
 .contents {
   height: auto;
 }
-}
 
-@media (max-width: 390px) {
 .top-image {
   width: 100vw;
   height: 100vh;
 }
-}
 
-@media (max-width: 390px) {
-p {
+h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -329,10 +307,71 @@ p {
   font-size: 15px;
   font-family:'Comic Sans MS' 
 }
-}
 
 .sp-nav {
    display: none; 
+}
+
+.second_title{
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.second_colum{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8%;
+}
+
+.target_text{
+  font-size: 11px;
+}
+
+p {
+  font-size: 10px;
+}
+
+/* 対象者の部分 */
+.target{
+  text-align: center;
+  width: 20rem;
+  margin: 3%;
+}
+
+.app-detail{
+  background-image: url(assets/mizu.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
+.second_detail{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8%;
+  height: 40px;
+}
+
+.second_use{
+  margin-bottom: 8%;
+}
+
+.use-text{
+  width: 70%;
+  margin: 3%;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+  height: 60px;
+}
+
+.footer-image {
+  width: 90px;
+}
 }
 
 /* ハンバーガーメニュー実装 */
