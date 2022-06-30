@@ -70,7 +70,7 @@ li {
 .contents {
   max-width: 1500px;
   margin: 0 auto;
-  height: 1500px;
+  height: 1400px;
 }
 
 .top-image {
@@ -107,11 +107,16 @@ h2 {
   margin: 3%;
 }
 
+.app-detail{
+  background-image: url(assets/mizu.jpg);
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+}
 .second_detail{
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 8%;
-  margin-left: 3%;
+  height: 150px;
 }
 
 .second_use{
@@ -124,9 +129,11 @@ h2 {
 }
 
 .logo-footer {
-  text-align: center;
-  align-content: center;
-  background-color: skyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(138, 213, 243);
   height: 60px;
 }
 
