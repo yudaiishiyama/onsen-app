@@ -11,6 +11,14 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_one_attached :image, dependent: :destroy
 
+  def self.search(search)
+    if search != ""
+      Post.where('address LIKE(?)', "%#{search}%")
+    else
+      Post.all
+    end
+  end
+
   after_validation :geocode
 
   private

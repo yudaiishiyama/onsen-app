@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  # before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
     @post = Post.all.order('created_at DESC')
@@ -47,6 +47,9 @@ class PostsController < ApplicationController
     end
   end
 
+  def search
+    @posts = Post.search(params[:keyword])
+  end
   private
 
   def post_params
@@ -55,10 +58,8 @@ class PostsController < ApplicationController
   end
 
   def contributor_confirmation
-    if @post.user.id == current_user.id
-      redirect_to posts_path
-    else
-      redirect_to posts_path
+    if @post.user.id != current_user.id
+      redirect_to action: :index
     end
   end
 end
