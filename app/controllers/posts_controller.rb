@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  before_action :contributor_confirmation, only: [:edit, :update, :destroy]
+  # before_action :contributor_confirmation, only: [:edit, :update, :destroy]
 
   def index
     @post = Post.all.order('created_at DESC')
@@ -57,9 +57,7 @@ class PostsController < ApplicationController
                                  :longitude).merge(user_id: current_user.id)
   end
 
-  def contributor_confirmation
-    if @post.user.id != current_user.id
-      redirect_to action: :index
-    end
-  end
+  # def contributor_confirmation
+  #   redirect_to root_path unless current_user == @post.user
+  # end
 end
