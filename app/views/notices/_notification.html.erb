@@ -1,0 +1,13 @@
+<% visiter=notice.visiter %>
+<% post=notice.micropost %>
+
+<div class="user-view clearfix ">
+  <%= link_to user_path(notice.visiter) do %>
+    <%=  image_tag notice.visiter.image[:small].url, class:"user-thumb", style:"width: 60px;"%>
+  <% end %>
+  <%== notice_form(notice) %><span class="moderate-font"><%= " (#{time_ago_in_words(notice.created_at)}前)" %></span>
+  <br>
+  <% if !@comment.nil? %>
+    <p class="moderate-font"><%= @comment %></p>
+  <% end %>
+</div>

@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.post_id = @post.id
     if @comment.save
+      @post.create_notice_comment!(current_user, @comment.id)
       render :post_comments
     else
       @post = @comment.post
