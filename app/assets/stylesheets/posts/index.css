@@ -140,6 +140,57 @@ h2 {
 .footer-image {
   width: 90px;
 }
+
+/* アプリの使い方 */
+.possible_colum_1{
+  margin-top: 80px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  height: auto;
+  box-sizing: border-box;
+  
+}
+
+.possible_colum_2{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  height: auto;
+  margin-bottom: 150px;
+}
+
+.possible_colum_3{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.possible_colum_1 p, .possible_colum_2 p, .possible_colum_3 p {
+  font-size: 16px;
+}
+
+.possible_text{
+  font-weight: bold;
+  font-size: 25px;
+  margin: 15px;
+  margin-top: 2rem;
+  margin-left: 0;
+}
+
+/* 機能画像 */
+.contents-image{
+  width: 85vh;
+  height: 65vh;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  
+}
+
 /* 投稿一覧 */
 
 .post-contents {
@@ -402,11 +453,7 @@ p {
   margin: 3%;
 }
 
-.app-detail{
-  background-image: url(assets/mizu.jpg);
-  background-size:100% 100%;
-  background-repeat: no-repeat;
-}
+
 .second_detail{
   font-size: 20px;
   font-weight: bold;
@@ -435,7 +482,68 @@ p {
 .footer-image {
   width: 90px;
 }
+
+.possible_colum_1{
+  display: none;
 }
+
+.possible_colum_2{
+  display: none;
+}
+
+.possible_colum_3{
+  display: none;
+}
+
+.possible_colum_1_smartphone{
+ display: inline;
+ text-align: center;
+} 
+.possible_colum_2_smartphone{
+ display: inline;
+ text-align: center;
+} 
+.possible_colum_3_smartphone{
+ display: inline;
+ text-align: center;
+} 
+
+.possible_text {
+ font-size: 20px;
+}
+
+.detail_description{
+width: 100%;
+height: auto;
+text-align: center;
+padding: 5px;
+font-size: 0.8rem;
+}
+
+.demo_image{
+width: 100%;
+height: auto;
+margin-bottom: 30px;
+}
+
+.contents-image{
+margin: 5px;
+padding: 10px;
+background-color: #FFF;
+border-radius: 10px;
+
+}
+
+.contents-image {
+display: none;
+}
+
+.contents-image-smartphone{
+width: 90%;
+object-fit: contain;
+}
+}
+
 
 /* ハンバーガーメニュー実装 */
 @media screen and (max-width: 390px) {
