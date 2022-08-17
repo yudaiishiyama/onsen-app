@@ -1,8 +1,11 @@
+* {
+  font-family: '筑紫A丸ゴシック';
+}
+
 body {
   font-size: 14px;
   color: black;
   margin: 0 auto;
-  font-family: '筑紫A丸ゴシック';
 }
 
 
@@ -26,7 +29,7 @@ header {
   background-color: transparent;
   margin: 0;
   padding: 5px 0;
-display: flex;
+  display: flex;
   
 }
 
@@ -44,7 +47,6 @@ display: flex;
   margin-right: 30px;
   margin-top: 5px;
   padding: 12px 0px;
-  font-family: 'Londrina Shadow', cursive;
 }
 
 .navbar {
@@ -71,6 +73,7 @@ li {
   max-width: 1500px;
   margin: 0 auto;
   height: 1400px;
+  /* background-color: aqua; */
 }
 
 .top-image {
@@ -78,20 +81,23 @@ li {
   height: 100vh;
 }
 
+.setumei {
+  background-color: rgb(147, 243, 243);
+}
 h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
   font-size: 30px;
-  font-family: 'klee'
 }
 
 
 .second_title{
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: bold;
+  margin: 0;
 }
 
 .second_colum{
@@ -108,15 +114,13 @@ h2 {
 }
 
 .app-detail{
-  background-image: 
-  background-size:100% 100%;
-  background-repeat: no-repeat;
 }
 .second_detail{
+  text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 8%;
-  height: 150px;
+  height: 50px;
 }
 
 .second_use{
@@ -183,12 +187,24 @@ h2 {
 
 /* 機能画像 */
 .contents-image{
-  width: 85vh;
-  height: 65vh;
+  width: 50vh;
+  height: 50vh;
   margin: 5px;
   padding: 10px;
   border-radius: 10px;
   
+}
+
+.possible_colum_1_smartphone {
+  display: none;
+}
+
+.possible_colum_2_smartphone {
+  display: none;
+}
+
+.possible_colum_3_smartphone {
+  display: none;
 }
 
 /* 投稿一覧 */
