@@ -60,7 +60,8 @@ https://docs.google.com/spreadsheets/d/1KTwhx_go50To3R03khBooQKtLbZgtMFeOiozgHOb
 ログインユーザーであればコメント可能。
 [![Image from Gyazo](https://i.gyazo.com/ce1c37162f4ce06e53676e50f64e265e.gif)](https://gyazo.com/ce1c37162f4ce06e53676e50f64e265e)
 
-
+## レスポンシブデザイン
+[![Image from Gyazo](https://i.gyazo.com/3fe5ca7ddd5702b7d5389c95e9833d17.gif)](https://gyazo.com/3fe5ca7ddd5702b7d5389c95e9833d17)
 # 実装予定の機能
 現在、非同期のいいね機能を実装中
 今後はトップページでアプリの機能紹介
