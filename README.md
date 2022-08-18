@@ -2,7 +2,7 @@
 yumegurism
 
 # アプリケーション概要
-九州内の温泉情報をシェアし、ユーザー同士でコミュニケーションもとることで、温泉好きのコミュニティを作ることができる。
+温泉情報をシェアし、ユーザー同士でコミュニケーションもとることで、温泉好きのコミュニティを作ることができる。
 
 # URL
 https://onsen-app-38009.herokuapp.com/posts
@@ -131,7 +131,16 @@ https://docs.google.com/spreadsheets/d/1KTwhx_go50To3R03khBooQKtLbZgtMFeOiozgHOb
 
 
 # 開発環境
-Ruby,Ruby on Rails,jquery,HTML,CSS,ajax
+フロントエンド
+HTML／CSS,jQuery
+
+バックエンド
+ruby '2.6.5'
+Rails '6.0.0'
+
+その他使用技術
+devise,mini_magick,aws-sdk-s3,googleapis
+
 
 # ローカルでの動作方法
 % git clone https://github.com/yudaiishiyama/onsen-app.git
