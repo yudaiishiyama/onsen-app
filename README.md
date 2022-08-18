@@ -58,9 +58,11 @@ https://docs.google.com/spreadsheets/d/1KTwhx_go50To3R03khBooQKtLbZgtMFeOiozgHOb
 
 ## コメント機能
 ログインユーザーであればコメント可能。
-[![Image from Gyazo](https://i.gyazo.com/ce1c37162f4ce06e53676e50f64e265e.gif)](https://gyazo.com/ce1c37162f4ce06e53676e50f64e265e)
+[![Image from Gyazo](https://i.gyazo.com/012b23a57c87f26efb68f0df18273bfa.png)](https://gyazo.com/012b23a57c87f26efb68f0df18273bfa)
 
 ## レスポンシブデザイン
+スマホにも対応できるようにレスポンシブデザインを実装。
+新規登録などのヘッダーをハンバーガーメニューに変更。
 [![Image from Gyazo](https://i.gyazo.com/310f6d18f680fd51b709fd94f5c780a6.jpg)](https://gyazo.com/310f6d18f680fd51b709fd94f5c780a6)
 # 実装予定の機能
 現在、非同期のいいね機能を実装中
