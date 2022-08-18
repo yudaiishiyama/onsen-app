@@ -82,9 +82,10 @@ li {
 }
 
 .setumei {
-  background-color: rgb(147, 243, 243);
+  background-color: rgb(167, 244, 244);
 }
 h2 {
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -434,8 +435,7 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  font-size: 15px;
-  font-family:'Comic Sans MS' 
+  font-size: 14px;
 }
 
 .sp-nav {
@@ -525,7 +525,8 @@ p {
 } 
 
 .possible_text {
- font-size: 20px;
+ font-size: 15px;
+ margin: 0;
 }
 
 .detail_description{
