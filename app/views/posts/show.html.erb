@@ -1,5 +1,5 @@
 
-<main class="main">
+<div class="main">
 <div class= "null">
 </div>
 <div id="map"></div>
@@ -63,7 +63,7 @@ function initMap() {
         <div id="comments_area_<%= @post.id %>"> 
          <%= render 'comments/post_comments', post: @post %>
         </div>
-  
+      </div>
       <% if user_signed_in? && current_user.id == @post.user_id %>
          <div class="post__manage"> 
            <%= link_to "編集する", edit_post_path(@post.id), method: :get,class: :post__btn %> 
@@ -72,4 +72,5 @@ function initMap() {
        <% end %> 
     </div>
   </div>
-</main>
+</div>
+</div>
