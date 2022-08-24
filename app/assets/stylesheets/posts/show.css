@@ -35,7 +35,7 @@
   height: 450px;
   width: 50vw;
   background: white;
-  box-shadow: 7px 5px 5px rgb(187, 236, 249);
+  box-shadow: 10px 5px 5px rgb(141, 228, 252);
   color: black;
   margin: 50px auto 0;
 }
@@ -134,7 +134,7 @@
 }
 
 .post_description {
-  margin-bottom: 150px;
+  margin-bottom: 20px;
 }
 
 .post_bottom {
@@ -146,7 +146,7 @@
 }
 
 .post_comment {
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .post__manage {

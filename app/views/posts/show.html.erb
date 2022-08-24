@@ -49,7 +49,7 @@ function initMap() {
         <div class="post_bottom">
         <div class="post_name">
           投稿者:
-          <%= link_to @post.user.name, user_path(@post.user), class: :post__user %>
+          <%= link_to image_tag(@post.user.image.variant(resize: '30x30'),class: "post_userimg"), user_path(@post.user) if @post.user.image.attached? %>
           </div>
           <div class="post_comment">
           "コメント"
@@ -66,8 +66,8 @@ function initMap() {
       </div>
       <% if user_signed_in? && current_user.id == @post.user_id %>
          <div class="post__manage"> 
-           <%= link_to "編集する", edit_post_path(@post.id), method: :get,class: :post__btn %> 
-           <%= link_to "削除する", post_path(@post.id), method: :delete,class: :post__btn %> 
+           <%= link_to "編集♨︎", edit_post_path(@post.id), method: :get,class: :post__btn %> 
+           <%= link_to "削除♨︎", post_path(@post.id), method: :delete,class: :post__btn %> 
          </div> 
        <% end %> 
     </div>
