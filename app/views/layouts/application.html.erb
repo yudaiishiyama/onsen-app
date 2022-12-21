@@ -36,12 +36,7 @@
               <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
               <li><%= link_to '新規投稿', new_post_path, class: "new-post" %></li>
               <li><%= link_to '投稿一覧', posts_path, class: "post-all" %></li>
-              <%# <li><%= link_to '♨︎', notices_path, class: "post-all" %></li>
-              <%# <% if unchecked_notices.any? %> 
-                <%# <i class="fa fa-circle notices-circle"></i> %>
-              <%# <% end %> 
           <% else %>
-      
               <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
               <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
               <% end %>
