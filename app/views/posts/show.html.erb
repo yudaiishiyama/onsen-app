@@ -23,7 +23,7 @@ function initMap() {
   <div class="inner">
     <div class="post__wrapper">
       <div class="post_show_image">
-        <%= image_tag @post.image.variant(resize: '500x500') %>
+        <%= image_tag @post.image.variant(resize: '300x300'), class:"post_address_image"%>
       </div>
       <div class="post__body">
         <% if user_signed_in? && current_user.id == @post.user_id %>
@@ -50,7 +50,7 @@ function initMap() {
           投稿者:
           <%= link_to image_tag(@post.user.image.variant(resize: '30x30'),class: "post_userimg"), user_path(@post.user) if @post.user.image.attached? %>
           </div>
-          <div class="post_comment">"コメント"</div>
+          <div class="post_comment">♨︎コメント♨︎</div>
         </div>
         <% if user_signed_in? %>
           <div class="new-comment">

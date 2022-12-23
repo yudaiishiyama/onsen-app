@@ -22,13 +22,21 @@
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
-  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+  width: 400px;
+}
+
+.post_address_image {
+  width: 100%;
 }
 
 .post__body {
   border-radius: 10px;
-  padding: 0px 20px;
+  padding: 0px 10px;
   margin-top: 60px;
+  margin-left: 30px;
+  margin-right: 30px;
   height: 600px;
   background-color: rgb(201, 248, 248);
   color: black;
@@ -51,6 +59,10 @@
 
 .post_comment {
   margin-top: 10px;
+}
+
+#comment_content {
+  width: 30%;
 }
 
 .post__manage {
@@ -106,8 +118,8 @@
   margin-left:auto;
   margin-right:auto;
   text-align:left;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .post__body {
@@ -129,8 +141,7 @@
   margin-bottom: 20px;
 }
 
-.post_bottom {
-}
+
 .post_name {
   color: black;
   display: flex;
