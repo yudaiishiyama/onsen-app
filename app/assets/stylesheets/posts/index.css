@@ -2,6 +2,7 @@
   font-family: '筑紫A丸ゴシック';
 }
 
+@media (min-width: 391px) {
 body {
   font-size: 20px;
   color: black;
@@ -252,6 +253,8 @@ h2 {
   color: #fff;
   background: rgb(64, 190, 239);
 }
+}
+
 
 
 
@@ -263,13 +266,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vh 0;
-    max-width: 1500px;
     margin: 0 auto;
     height: 100vh;
-    background-image:url(assets/mizu.jpg);
-    background-size:100% 100%;
-    background-repeat: no-repeat; 
   }
   
   .post-lists {
@@ -344,30 +342,26 @@ ul,li {
 }
 
 header {
-  position:fixed;
   height: 50px;
   top: 0;
   left: 0;
-  background-color: transparent;
   margin: 0;
   padding: 5px 0;
-display: flex;
+  display: flex;
+  background-color: rgb(201, 248, 248);
 }
 
 .heading {
   margin-left: 5px;
-  padding: 10px;
 }
 
 .appname {
   display: inline-block;
-  width: 87px;
-  height: 50px;
+  width: 80px;
+  height: 30px;
   left: 5px;
   font-size: 17px;
-  margin-right: 50px;
-  margin-top: 7px;
-  padding: 12px 0px;
+  padding-top: 10px;
   font-family: 'Londrina Shadow', cursive;
 }
 
@@ -397,8 +391,12 @@ li {
 }
 
 .top-image {
-  width: 100vw;
-  height: 100vh;
+  height: 400px;
+}
+
+.first-view {
+  position: relative;
+  height: 400px;
 }
 
 h2 {
@@ -406,7 +404,8 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
-  font-size: 14px;
+  font-size: 13px;
+  color: #FFF;
 }
 
 .sp-nav {
@@ -417,6 +416,7 @@ h2 {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  margin: 0px;
 }
 
 .second_colum{
@@ -427,6 +427,7 @@ h2 {
 
 .target_text{
   font-size: 11px;
+  height: 30px;
 }
 
 p {
@@ -434,10 +435,18 @@ p {
 }
 
 /* 対象者の部分 */
+.possible_colum_animation {
+  display: none;
+}
+
 .target{
   text-align: center;
   width: 20rem;
   margin: 3%;
+}
+
+.target_content {
+  background-color: rgb(201, 248, 248);
 }
 
 
@@ -446,6 +455,7 @@ p {
   font-weight: bold;
   margin-top: 8%;
   height: 40px;
+  text-align: center;
 }
 
 .second_use{
@@ -462,38 +472,20 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  
-  height: 60px;
+  background-color: rgb(201, 248, 248);
+  height: 30px;
 }
 
 .footer-image {
-  width: 90px;
+  width: 50px;
 }
 
-.possible_colum_1{
-  display: none;
-}
 
-.possible_colum_2{
-  display: none;
-}
-
-.possible_colum_3{
-  display: none;
-}
-
-.possible_colum_1_smartphone{
+.possible_colum_smartphone{
  display: inline;
  text-align: center;
 } 
-.possible_colum_2_smartphone{
- display: inline;
- text-align: center;
-} 
-.possible_colum_3_smartphone{
- display: inline;
- text-align: center;
-} 
+
 
 .possible_text {
  font-size: 15px;
