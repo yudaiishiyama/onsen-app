@@ -262,7 +262,7 @@ h2 {
 /* 投稿一覧スマホ表示 */
 @media (max-width: 390px) {
   .post-contents {
-    background-color: #FFF;
+    background-color: rgb(233, 248, 248);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -288,9 +288,10 @@ h2 {
   }
   
   .post-img:hover{
-    transform: scale(1.1, 1.1);
+    transform: scale(1.2, 1.2);
     transition:1s all;
   }
+
   .post-address{
     color: black;
     text-align: center;
@@ -298,20 +299,21 @@ h2 {
 
   .subtitle {
     width: 50%;
+    margin-top: 10px;
   }
   .search-form {
     text-align: center;
   }
   
   .search-form .search-input {
-    width: 60%;
+    width: 80%;
     margin-right: 10px;
     height: 30px;
     border: 1px white solid;
   }
   
   .search-form .search-btn {
-    width: 25%;
+    width: 30%;
     height: 30px;
     background-color: skyblue;
     border-radius: 3px;
@@ -335,11 +337,6 @@ body {
   font-family: '筑紫A丸ゴシック';
 }
 
-ul,li {
-  text-decoration: none;
-  padding: 12px 5px;
-  margin: 5px;
-}
 
 header {
   height: 50px;
@@ -375,13 +372,6 @@ header {
   display: flex;
 }
 
-li {
-  font-size: 11px;
-  margin-left: 7px;
-  margin-right: 10px;
-  list-style: none;
-}
-
 .link {
   color: #FFF;
 }
@@ -392,6 +382,7 @@ li {
 
 .top-image {
   height: 400px;
+  width: 100%;
 }
 
 .first-view {
@@ -597,7 +588,18 @@ object-fit: contain;
 .sp-nav li {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+a,a:hover,a:visited{
+  color: inherit;
+}
+
 .sp-nav li span {
   font-size: 15px;
   color: #fff;
