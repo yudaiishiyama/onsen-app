@@ -1,23 +1,25 @@
 
 .form__wrapper{
-  max-width: 1500px;
-  margin: 0 auto;
+  position: relative;
   height: 100vh;
-  background-color: transparent;
   background-image:url(assets/mix.001.jpg);
   background-size:100% 100%;
   background-repeat: no-repeat; 
-  margin:auto; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.form__area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
 }
 
 .form__text {
-  width: 90%;
+  width: 100%;
   margin-top: 5px;
   height: 48px;
-  padding: 10px 16px 8px;
+  padding: 10px 0px;
   border-radius: 4px;
   border: 1px solid white;
   background: white;
@@ -26,8 +28,8 @@
 }
 
 .field{
-
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .actions{
@@ -44,3 +46,21 @@
   cursor: pointer;
 }
 
+@media (min-width: 769px) {
+  .form__text {
+    width: 500px;
+    margin-top: 5px;
+    height: 48px;
+    padding: 10px 0px;
+    border-radius: 4px;
+    border: 1px solid white;
+    background: white;
+    font-size: 16px;
+    resize: none;
+  }
+
+  .actions{
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}

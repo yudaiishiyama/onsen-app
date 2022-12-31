@@ -52,7 +52,6 @@
               <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li> 
               <li><%= link_to '新規投稿', new_post_path, class: "new-post" %></li>
               <li><%= link_to '投稿一覧', posts_path, class: "post-all" %></li>
-              <li><%= link_to '🔔', "#", class: "post-all" %></li>
               <li class="close"><span>閉じる</span></li>
           <% else %>
               <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
