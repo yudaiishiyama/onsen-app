@@ -154,13 +154,13 @@ h2 {
   margin-top: 80px;
   margin-bottom: 150px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 16px;
 }
 
 .detail_description {
   width: 45%;
-  margin: 15px;
+  padding: 20px;
 }
 
 .detail_image {
@@ -175,10 +175,8 @@ h2 {
 
 /* 機能画像 */
 .contents-image{
-  margin: 5px;
-  padding: 10px;
   border-radius: 10px;
-  width: 400px;
+  width: 100%;
 }
 
 .possible_colum_smartphone {
